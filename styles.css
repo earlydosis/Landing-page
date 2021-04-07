@@ -86,3 +86,51 @@ body {
   border-color: #a972cb;
   color: #fff;
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .wave {
+    width: 70%;
+  }
+  .container-text {
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .tittle {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .image-container {
+    flex-basis: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vic-img {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wave {
+    width: auto;
+    height: 48%;
+  }
+  .container-text {
+    flex-basis: 40%;
+    justify-content: flex-start;
+  }
+  .tittle {
+    font-size: 35px;
+  }
+}
